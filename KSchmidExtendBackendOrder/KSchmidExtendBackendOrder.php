@@ -31,7 +31,6 @@ class KSchmidExtendBackendOrder extends Plugin
 
 
         if ($request->getActionName() == 'load') {
-            Shopware()->PluginLogger()->info("my info --> " . $request->getActionName());
             $view->extendsTemplate('backend/order/view/list.js');
         }
 
