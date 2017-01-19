@@ -63,7 +63,7 @@ Ext.override(Shopware.apps.Order.view.list.List, {
                 {
                     invoiceCancelNum  = {
                         tag: 'a',
-                        html: 'Storno',
+                        html: this.get('documentId'),
                         href: '{url action="openPdf"}?id=' + this.get('hash'),
                         target: '_blank'
                     };
